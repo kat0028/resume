@@ -1,0 +1,179 @@
+%-------------------------
+% Resume in LaTeX
+% Based on "Jake's Resume" by Jake Gutierrez (https://github.com/jakegut/resume),
+% itself based on sb2nov/resume. License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Same as \resumeSubheading, plus extra rows (#5) built from \resumeSubSubheading
+\newcommand{\resumeMultiSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      #5
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{\textit{\small#1} & \textit{\small #2} \\}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Kyle Aaron Thompson} \\ \vspace{1pt}
+    \small Auburn, Alabama $|$ (256) 603-2486 $|$ \href{mailto:kat0028@auburn.edu}{\underline{kat0028@auburn.edu}} $|$ Active SECRET Clearance
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeMultiSubheading
+      {Auburn University}{Auburn, Alabama}
+      {Ph.D. Mechanical Engineering}{Expected 2028}
+      {\resumeSubSubheading{M.S. Mechanical Engineering}{August 2025}
+       \resumeSubSubheading{B.S. Mechanical Engineering, Magna Cum Laude}{August 2020}}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Graduate Research Assistant -- Auburn University}{August 2020 -- Current}
+      {GPS and Vehicle Dynamics Laboratory (GAVLAB)}{Auburn, Alabama}
+      \resumeItemListStart
+        \resumeItem{Conduct sponsored research in guidance, navigation, and control (GNC) of autonomous ground vehicles, focusing on guidance and control, with additional work on aerial platforms.}
+        \resumeItem{Serve as controls, guidance, and coding lead for Autonomous Tiger Racing (ATR), Auburn's Indy Autonomous Challenge (IAC) team.}
+        \resumeItem{Built the team's raceline optimizers and optimal online feedback controllers, and developed the majority of the current software stack.}
+        \resumeItem{Developed a GPS-independent leader--follower convoy system using UWB ranging and vehicle models, achieving 1--5\,m path-duplication accuracy at 10--50\,m following distances.}
+        \resumeItem{Designed an intelligent emergency stop system that tracks minimum-jerk trajectories with an LQR path-tracking controller, targeted to run on a low-cost backup processor.}
+        \resumeItem{Published multiple academic papers as first author and co-authored additional conference and journal papers.}
+        \resumeItem{Assisted in the laboratory instruction of undergraduate courses taught at Auburn University.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {United States Marine Corps Reserves}{July 2014 -- Current}
+      {Gunnery Sergeant}{}
+      \resumeItemListStart
+        \resumeItem{Responsible for safe operation of Marine Corps artillery weapon systems at Battery K, 2nd Battalion, 14th Marines.}
+        \resumeItem{Responsible for the training and supervision of an Operational Firing Platoon (approximately 35 Marines).}
+        \resumeItem{Built and instructed curriculum used in training programs to grant professional certifications for Rocket Artillery Operators.}
+        \resumeItem{Deployed to Afghanistan with Task Force Southwest 19.1 and 19.2 (2019) and to Okinawa (2022--2023).}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Teledyne Brown Engineering, Inc.}{April 2015 -- July 2015; June 2016 -- August 2016}
+      {Classified Lab Administrative Assistant}{Huntsville, Alabama}
+      \resumeItemListStart
+        \resumeItem{Responsible for opening and securing the classified lab after-hours and on weekends, logging of lab and maintenance activities, and general enforcement of government and company security policies.}
+        \resumeItem{Supported generation of software documentation.}
+        \resumeItem{Responsible for performing basic system administration functions in support of users in the classified lab.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-----------
+\section{Selected Publications}
+ \resumeSubHeadingListStart
+  \item
+  \resumeItemListStart
+    \resumeItem{\textbf{K. Thompson}, ``Intelligent Emergency Stop System for Autonomous Ground Vehicles Using Minimum Jerk Trajectories and Path Tracking Linear Quadratic Regulator,'' \textit{M.S. thesis}, Auburn University, Auburn, AL, Aug.~2025.}
+    \resumeItem{\textbf{K. Thompson}, B. Jones, S. Martin, and D. Bevly, ``GPS-Independent Autonomous Vehicle Convoying with UWB Ranging and Vehicle Models,'' \textit{NDIA Ground Vehicle Systems Engineering and Technology Symposium (GVSETS)}, Novi, MI, Aug.~2022.}
+  \resumeItemListEnd
+ \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Computer and Software}{: Windows (10, 11), Linux, macOS, LaTeX, Visual Studio, Xcode, Single Board Computers and Microcontrollers} \\
+     \textbf{Programming and Tools}{: C++, MATLAB, Python, C\#, Kotlin, Swift, Qt, ROS, and SolidWorks (3D CAD)}
+    }}
+ \end{itemize}
+
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements and Involvements}
+ \resumeSubHeadingListStart
+  \item
+  \resumeItemListStart
+    \resumeItem{Dean's List -- Fall 2015, Fall 2016, Spring 2017, Fall 2018, Spring 2020 (Auburn University)}
+    \resumeItem{Eagle Scout -- Boy Scouts of America, 2013 (Troop 8 -- Madison, Alabama)}
+  \resumeItemListEnd
+ \resumeSubHeadingListEnd
+
+
+\end{document}

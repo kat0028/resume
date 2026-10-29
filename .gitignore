@@ -1,0 +1,9 @@
+# Track only the LaTeX source and the compiled PDF; ignore all build artifacts
+*
+!*/
+!.gitignore
+!*.tex
+!*.cls
+!*.sty
+!*.bib
+!*.pdf
