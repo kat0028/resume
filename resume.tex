@@ -81,6 +81,11 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+% Third-level bullets nested inside a \resumeItemListStart list
+\renewcommand\labelitemiii{$\vcenter{\hbox{\tiny$\circ$}}$}
+\newcommand{\resumeSubItemListStart}{\begin{itemize}[leftmargin=1.5em, topsep=0pt, itemsep=0pt, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeSubItemListEnd}{\end{itemize}}
+
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -119,27 +124,33 @@
       \resumeItemListStart
         \resumeItem{Conduct sponsored research in guidance, navigation, and control (GNC) of autonomous ground vehicles, focusing on guidance and control, with additional work on aerial platforms.}
         \resumeItem{Developed longitudinal and lateral guidance and control for Class 8 trucks, sedans, and racing platforms.}
+        \resumeItem{Developed a GPS-independent leader--follower convoy system using UWB ranging and vehicle models, achieving 1--5\,m path-duplication accuracy at 10--50\,m following distances.}
         \resumeItem{Serve as controls, guidance, and software lead for Autonomous Tiger Racing (ATR), Auburn's Indy Autonomous Challenge (IAC) team.}
+        \resumeItem{Developed the majority of the team's current software stack.}
         \resumeItem{Designed raceline trajectory optimizers formulated as nonlinear programs.}
         \resumeItem{Built real-time optimal feedback controllers as quadratic programs solved online with OSQP for reliable timing.}
         \resumeItem{Published multiple academic papers as first author and co-authored additional conference and journal papers.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {United States Marine Corps Reserves}{July 2014 -- Present}
-      {Gunnery Sergeant}{}
+      {United States Marine Corps Reserve}{July 2014 -- Present}
+      {GySgt 0869 -- Platoon Sergeant}{}
       \resumeItemListStart
+        \resumeItem{Train and supervise an Operational Firing Platoon of approximately 35 Marines.}
         \resumeItem{Oversee safe operation of M142 HIMARS rocket artillery systems for Battery K, 2nd Battalion, 14th Marines.}
         \resumeItem{Developed and taught curriculum for the professional certification of HIMARS operators.}
-        \resumeItem{Deployed to Afghanistan with Task Force Southwest 19.1 and 19.2 (2019) and to Okinawa (2022--2023).}
+        \resumeItem{Deployments:}
+        \resumeSubItemListStart
+          \resumeItem{Afghanistan 2019 -- TFWS 19.1/2}
+          \resumeItem{Okinawa 2022--2023 -- Sierra 3/12 UDP 23.1}
+        \resumeSubItemListEnd
       \resumeItemListEnd
 
     \resumeSubheading
       {Teledyne Brown Engineering, Inc.}{April 2015 -- July 2015; June 2016 -- August 2016}
       {Classified Lab Administrative Assistant}{Huntsville, Alabama}
       \resumeItemListStart
-        \resumeItem{Opened and secured the classified lab after hours and enforced government and company security policies.}
-        \resumeItem{Performed basic system administration for classified lab users and supported software documentation.}
+        \resumeItem{Secured the classified lab after hours, enforced security policies, and performed basic system administration.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
